@@ -2,7 +2,7 @@
 
 ## Overview
 
-A lightweight yet powerful **real-time chat application** built with Java! 💬✨ Inspired by WhatsApp, this project lets users exchange messages instantly over a multi-threaded server. Built using **Java Swing, AWT, and Socket programming**, it features a user-friendly interface and smooth communication. While it lacks media sharing and encryption (for now 😉), future updates will bring authentication, security, and enhanced UI.
+A lightweight yet powerful **real-time chat application** built with Java! 💬✨ Inspired by WhatsApp, this project lets users exchange messages instantly over a multi-threaded server. Built using **Java Swing, AWT, and Socket programming**, it features a user-friendly interface and smooth communication. While it lacks media sharing and encryption, future updates will bring authentication, security, and enhanced UI.
 
 ## Features
 
@@ -48,13 +48,13 @@ ChatApplication/
    git clone https://github.com/your-username/chat-application-java.git
    ```
 2. Open the project in an IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.).
-3. Compile and run the `Server.java` file first.
-4. Run multiple instances of `Client.java` to start chatting.
+3. Compile and run the Server.java file first.
+4. Run multiple instances of Client.java to start chatting.
 
 ## How It Works
 
-- The `Server` class listens for client connections and manages communication.
-- The `Client` class establishes a connection with the server and enables chat functionality.
+- The Server class listens for client connections and manages communication.
+- The Client class establishes a connection with the server and enables chat functionality.
 - Messages are sent over sockets and displayed in the chat window.
 
 ## Future Enhancements
