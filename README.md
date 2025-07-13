@@ -1,4 +1,4 @@
-## 💬 Client-Server Chat Application (Java Socket Programming)
+## 💬 Client-Server Chat Application 
 
 ### 📌 Overview
 
@@ -17,17 +17,17 @@ This is a Java-based client-server chat application using socket programming. Th
 1. #### Compile Both Files
 
 cmd command
-javac Server.java Client.java
+ javac Server.java Client.java
 
 2. #### Run the Server First
 
 cmd command
-java Server
+ java Server
 
 3. #### Run the Client (in another terminal or system)
 
 cmd command
-java Client
+ java Client
 
 Ensure that the server is running before starting the client.
 Both must be on the same network or machine (for `localhost`).
