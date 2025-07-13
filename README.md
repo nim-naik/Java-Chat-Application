@@ -14,17 +14,17 @@ This is a Java-based client-server chat application using socket programming. Th
 
 ### 🚀 How to Run
 
-#### Compile Both Files
+1. #### Compile Both Files
 
 cmd command
 javac Server.java Client.java
 
-#### Run the Server First
+2. #### Run the Server First
 
 cmd command
 java Server
 
-#### Run the Client (in another terminal or system)
+3. #### Run the Client (in another terminal or system)
 
 cmd command
 java Client
