@@ -1,67 +1,57 @@
-# 🚀 Java Chat Application
+## 💬 Client-Server Chat Application (Java Socket Programming)
 
-## Overview
+### 📌 Overview
 
-A lightweight yet powerful **real-time chat application** built with Java! 💬✨ Inspired by WhatsApp, this project lets users exchange messages instantly over a multi-threaded server. Built using **Java Swing, AWT, and Socket programming**, it features a user-friendly interface and smooth communication. While it lacks media sharing and encryption, future updates will bring authentication, security, and enhanced UI.
+This is a Java-based client-server chat application using socket programming. The system allows real-time message exchange between a server and multiple clients via TCP/IP. The UI can be enhanced with icons located in the `icons` folder, or you can use your own.
 
-## Features
+### 🔧 Features
 
-- Private chat between two users
-- Real-time message transmission
-- User-friendly graphical interface
-- Simple and lightweight design
+* Basic one-to-one chat system using sockets
+* Real-time communication over localhost or LAN
+* Separate Client and Server programs
+* Console-based or GUI-supported with optional icons
+* Lightweight and easy to run
 
-## Similarities to WhatsApp
+### 🚀 How to Run
 
-- Real-time chat using sockets
-- Private messaging between users
-- GUI-based chat interface
+#### Compile Both Files
 
-## Differences from WhatsApp
+cmd command
+javac Server.java Client.java
 
-- No media sharing (only text messages are supported)
-- No end-to-end encryption (messages are sent in plain text)
-- No cloud sync (messages are not stored for retrieval after session ends)
-- No user authentication (users connect without login verification)
+#### Run the Server First
 
-## Technologies Used
+cmd command
+java Server
 
-- Java Swing (for GUI components)
-- Java AWT (for additional UI enhancements)
-- Java Socket Programming (for client-server communication)
+#### Run the Client (in another terminal or system)
 
-## Project Structure
+cmd command
+java Client
 
-```
-ChatApplication/
-│-- src/
-│   │-- Client.java
-│   │-- Server.java
-│-- README.md
-│-- LICENSE
-```
+* Ensure that the server is running before starting the client.
+* Both must be on the same network or machine (for `localhost`).
 
-## Installation & Setup
+### 💻 Class Descriptions
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/chat-application-java.git
-   ```
-2. Open the project in an IDE (IntelliJ IDEA, Eclipse, NetBeans, etc.).
-3. Compile and run the Server.java file first.
-4. Run multiple instances of Client.java to start chatting.
+* **Server.java**
 
-## How It Works
+  * Waits for incoming client connections.
+  * Listens to messages from clients and responds.
+  * Can be extended for multi-client handling with threads.
 
-- The Server class listens for client connections and manages communication.
-- The Client class establishes a connection with the server and enables chat functionality.
-- Messages are sent over sockets and displayed in the chat window.
+* **Client.java**
 
-## Future Enhancements
+  * Connects to the server and enables user input.
+  * Sends and receives messages to/from the server.
 
-- Implementing encryption for secure messaging
-- Adding user authentication
-- Enhancing UI with modern design elements
-- Supporting media file sharing (images, audio, and video messages)
-- Adding a chat history feature with cloud backup
+### 🖼️ Icons
 
+* Icons used in the GUI are located in the `icons` folder.
+* You may replace or add your own icons by placing image files (e.g., `.png`, `.jpg`) in the `icons/` directory and updating their references in the code.
+
+### 🛠 Requirements
+
+* Java JDK 8 or higher
+* Terminal or any Java IDE
+* Optional: Internet or LAN setup for multi-system communication
