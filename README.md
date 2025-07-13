@@ -29,8 +29,8 @@ java Server
 cmd command
 java Client
 
-* Ensure that the server is running before starting the client.
-* Both must be on the same network or machine (for `localhost`).
+Ensure that the server is running before starting the client.
+Both must be on the same network or machine (for `localhost`).
 
 ### 💻 Class Descriptions
 
